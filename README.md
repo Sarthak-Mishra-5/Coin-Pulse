@@ -1,4 +1,4 @@
-# CoinPulseLive
+# Coin Pulse
 
 ## Overview
 
@@ -21,4 +21,4 @@ Easily toggle between INR and USD to view cryptocurrency prices in the currency 
 Impressively displays the current time, keeping you aware of the market changes in real-time.
 
 
-Happy tracking with CoinPulseLive!
+Happy tracking with Coin Pulse!
