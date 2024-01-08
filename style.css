@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 5%;
+    color: #fff;
+}
+/*
+#crypto-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
+nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration:  none;
+}
+nav .btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.content {
+    margin-top: 12%;
+}
+.content h1{
+    font-size: 88px;
+    margin-bottom: 15px;
+}
+.content h1 span{
+    color: #ff960b;
+}
+.content p{
+    line-height: 22px;
+    font-size: 14px;
+}
+.content .btn{
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff960b;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+.coin-list{
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.coin{
+    display: flex;
+    align-items: center;
+    width: 185px;
+    height: 80px;
+    font-size: 14px;
+    margin: 0 15px;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+.coin p{
+    font-size: 16px;
+}
+.coin img{
+    width: 40px;
+    
+    margin-right: 10px;
+}
+
+.coin h3{
+    color: #fff;
+    margin-bottom: 5px;
+}
+.coin-list-inr{
+    position: absolute;
+    right: 10%;
+    bottom: 150px;
+    display: flex;
+    align-items: center;
+}
+
+
+.clock {
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 12%;
+    right: -5px;
+    transform: translateX(-50%) translateY(-50%);
+    color: #ff960b;
+    font-size: 30px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
