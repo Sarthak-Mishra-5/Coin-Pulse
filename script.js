@@ -23,22 +23,6 @@ $.ajax(settings).done(function(response){
     dogeR.innerHTML=response.dogecoin.inr;
     
 });
-/*
-Time & Date
-setInterval(() => {
-    let date=document.getElementById("date");
-    let hrs=document.getElementById("hrs");
-    let min=document.getElementById("min");
-    let sec=document.getElementById("sec");
-    
-    let currentTime=new Date();
-    date.innerHTML=currentTime.getDate();
-    hrs.innerHTML=(currentTime.getHours()<10?"0":"")+currentTime.getHours();
-    min.innerHTML=(currentTime.getMinutes()<10?"0":"")+currentTime.getMinutes();
-    sec.innerHTML=(currentTime.getSeconds()<10?"0":"")+currentTime.getSeconds();
-}, 1000);
--/
-*/
 
 function showTime(){
     var date = new Date();
@@ -68,52 +52,3 @@ function showTime(){
 }
 
 showTime();
-
-
-
-
-
-
-
-
-
-/*document.addEventListener('DOMContentLoaded', function () {
-    const cryptoContainer = document.getElementById('crypto-container');
-
-    // Replace 'YOUR_API_KEY' with your actual API key
-    const apiKey = 'YOUR_API_KEY';
-    const apiUrl = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,dogecoin&vs_currencies=usd';
-
-    function fetchCryptoData() {
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                displayCryptoData(data);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }
-
-    function displayCryptoData(data) {
-        cryptoContainer.innerHTML = '';
-
-        for (const [crypto, priceInfo] of Object.entries(data)) {
-            const price = priceInfo.usd.toFixed(2);
-
-            const cryptoCard = document.createElement('div');
-            cryptoCard.classList.add('crypto-card');
-
-            cryptoCard.innerHTML = `
-                <h2>${crypto.toUpperCase()}</h2>
-                <p>Price: $${price}</p>
-            `;
-
-            cryptoContainer.appendChild(cryptoCard);
-        }
-    }
-
-    // Fetch data initially and set up interval for live updates
-    fetchCryptoData();
-    setInterval(fetchCryptoData, 1000); // Update every 1 minute
-});*/
